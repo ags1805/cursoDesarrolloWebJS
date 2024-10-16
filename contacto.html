@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logoPeloteanding.png">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estiloFormulario.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="img/logoPeloteanding.png" alt="Logo de Pelota Peloteanding" width="45" height="45">
+            <ul class="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="formasDePago.html">Formas de Pago</a></li>
+                <li><a href="contacto.html" id="linkActivo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+
+        <form id="formularioDeContacto" action="https://formspree.io/f/manyyldy" method="post" target="_blank">
+            <h2>Contáctanos</h2>
+            <label for="nombre" >Nombre: <input type="text" size="30" name="nombre" id="nombre" placeholder="Escribe tu nombre..." required> </label>
+            <label for="sexo">Sexo: 
+                <select id="sexo" name="sexo">
+                    <option value="m">Masculino</option>
+                    <option value="f">Femenino</option>
+                    <option value="x">No binario</option>
+                </select>
+            </label>        
+            <label for="email" >Correo Electrónico: <input type="email" size="30" name="email" id="email" placeholder="ags@prueba.com" required> </label>
+            <label for="motivo">Motivo: 
+                <select name="motivo" id="motivo">
+                    <option value="Consulta">Consulta</option>
+                    <option value="Reclamo">Reclamo</option>
+                </select>
+            </label>
+            <label for="descripcion">Consulta: </label> 
+            <textarea name="descripcion" id="descripcion" rows="10" placeholder="Escribe tu consulta..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        
+
+    </main>
+    <footer>
+        <a href="mailto:alvarezagustin23@gmail.com?pruebaPaginaWebPeloteanding">Enviar correo</a>
+    </footer>
+</body>
+</html>

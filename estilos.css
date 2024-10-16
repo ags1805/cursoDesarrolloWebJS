@@ -1,0 +1,152 @@
+.catalogo {
+    display: flex;
+    justify-content: space-around;
+    /* Esto distribuye los productos con espacio entre ellos */
+    flex-wrap: wrap;
+    /* Esto hace que los productos se ajusten si no hay suficiente espacio en la misma línea */
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.producto {
+    flex: 1 1 20%;
+    /* Los productos ocuparán el 20% del ancho del contenedor, ajustándose al espacio disponible */
+    margin: 10px;
+    /* Espaciado entre productos */
+    padding: 20px;
+    /* Espacio interno del div */
+    border: 1px solid #ccc;
+    /* Bordes para visualizar los productos */
+    text-align: center;
+    /* Centrar el contenido */
+}
+
+h3 {
+    font-size: 28px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Negrita */
+    color: #f0c14b; /* Color amarillo para destacar */
+    text-align: center; /* Centrar el texto */
+    padding: 10px; /* Espaciado alrededor del texto */
+    margin: 20px 0; /* Margen superior e inferior */
+    border-bottom: 1px solid #f0c14b; /* Línea debajo del título */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con algo de transparencia */
+    border-radius: 5px; /* Bordes redondeados */
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+/* Video de Home */
+
+iframe {
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+}
+
+/* Estilo general del menú */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Espacio entre logo y links */
+    align-items: center;
+    /* Alinear verticalmente los elementos */
+    padding: 10px 20px;
+    /*background-color: #000000;*/
+    background-color: #1a1a1a;
+    /*Color de fondo negro */
+}
+
+.navLinks {
+    list-style: none;
+    /* Eliminar los puntos de la lista */
+    display: flex;
+    /* Mostrar los links en línea */
+}
+
+
+.navLinks li {
+    margin-left: 20px;
+    /* Separar cada link */
+}
+
+/* Estilo para los enlaces del menú */
+.navLinks a {
+    text-decoration: none;
+    color: #fff;
+    /* Color blanco */
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    /* Fuente */
+    font-weight: 500;
+    padding: 5px;
+    transition: color 0.3s ease;
+    /* Transición de color */
+}
+
+.navLinks a:hover {
+    color: #f0c14b;
+    /* Cambiar a un color amarillo suave al hacer hover */
+}
+
+/* Estilo de la barra activa */
+.navLinks a:active {
+    border-bottom: 1.5px solid #f0c14b;
+    /* Barra debajo del link activo */
+}
+
+
+/* Estilos del contenedor del mapa */
+.contenedorMapa {
+    background-color: #1a1a1a;
+    /* Fondo oscuro */
+    padding: 20px;
+    /* Espacio alrededor del mapa */
+    border-radius: 10px;
+    /* Bordes redondeados para un estilo más suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Sombra suave para darle profundidad */
+    max-width: 1000px;
+    /* Limita el ancho del contenedor */
+    margin: 40px auto;
+    /* Centra el contenedor horizontalmente */
+    color: #fff;
+    /* Color blanco para el texto */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+}
+
+/* Estilo del mapa */
+#mapa {
+    width: 100%;
+    height: 400px;
+    /* Altura del mapa */
+    border-radius: 10px;
+    /* Bordes redondeados para el mapa */
+}
+
+.contenedorMapa h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f0c14b;
+    /* Color amarillo suave para destacar el título */
+    font-family: 'Arial', sans-serif;
+}
+
+.contenedorMapa p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #d3d3d3;
+    /* Color gris claro para que el texto contraste bien */
+    font-family: 'Arial', sans-serif;
+}
+
+#linkActivo {
+    border-bottom: 1.5px solid #f0c14b;
+}

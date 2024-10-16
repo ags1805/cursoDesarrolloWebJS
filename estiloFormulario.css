@@ -1,0 +1,60 @@
+
+form {
+    max-width: 500px;
+    /* Limita el ancho del formulario */
+    margin: 0 auto;
+    /* Centra el formulario en la página */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    /* Color de fondo suave */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para un efecto de elevación */
+}
+
+/* Estilos para las etiquetas (label) */
+form label {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Estilos para los campos de texto y email */
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    /* Asegura que padding y ancho estén alineados */
+    background-color: #fff;
+    /* Fondo blanco para los inputs */
+    transition: border-color 0.3s ease;
+}
+
+/* Estilos para el textarea */
+form textarea {
+    resize: none;
+    /* Evita que el usuario cambie el tamaño del área de texto */
+}
+
+/* Botón de enviar */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0066cc;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
